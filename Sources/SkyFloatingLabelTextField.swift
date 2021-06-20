@@ -133,7 +133,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
     }
 
     /// A UIFont value that determines the text font of the title label
-    @objc dynamic open var titleFont: UIFont = .systemFont(ofSize: 13) {
+    @objc dynamic open var titleFont: UIFont = UIFont(name: "Cairo-Regular", size: 10)! {
         didSet {
             updateTitleLabel()
         }
@@ -190,7 +190,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
     }
 
     /// A UIColor value that determines the text color of the title label when editing
-    @IBInspectable dynamic open var selectedTitleColor: UIColor = .blue {
+    @IBInspectable dynamic open var selectedTitleColor: UIColor = .black {
         didSet {
             updateTitleColor()
         }
